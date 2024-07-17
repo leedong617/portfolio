@@ -1,17 +1,16 @@
 /* styles.css */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
 }
 
 header {
     background: #333;
     color: #fff;
-    padding: 2rem 0;
+    padding: 1rem 0;
     text-align: center;
 }
 
@@ -19,46 +18,25 @@ header img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    border: 2px solid #fff;
 }
 
 header h1 {
-    margin: 1rem 0;
-}
-
-header p {
     margin: 0.5rem 0;
 }
 
-a {
-    color: #333;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 section {
-    padding: 2rem;
-    margin: 2rem auto;
+    padding: 1rem 2rem;
+    margin: 1rem auto;
     max-width: 800px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
 #stack pre {
     background: #f4f4f4;
     padding: 1rem;
     border-radius: 4px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
 }
 
 .project {
@@ -79,7 +57,6 @@ section h2 {
 
 .tech-stack img, .ui-images img {
     margin: 0.5rem;
-    width: 100px;
 }
 
 footer {
@@ -87,9 +64,4 @@ footer {
     padding: 1rem 0;
     background: #333;
     color: #fff;
-    margin-top: 2rem;
-}
-
-footer p {
-    margin: 0;
 }
