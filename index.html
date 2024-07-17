@@ -176,11 +176,11 @@ Environment          |	AWS (EC2, RDS), Oracle, MySQL <br>
                 <h4>트러블슈팅</h4>
                 <details>
                     <summary>상세보기</summary>
-                    <p>순환참조</p>
+                    <p><strong>순환참조</strong></p>
                     <p>개요 : Member REST API를 Swagger로 테스트 하던중 순환참조 에러가 발생하였다.</p>
                     <p>원인 : JPA를 사용해 Entity간 1:N 양방향 맵핑이 되있고 Entity를 그대로 반환할 경우 무한 참조가 발생하여 StackOverFlow가 난다.</p>
                     <p>해결 방법 : 많은 방법들이 있었지만 DTO를 만들어 반환하는 방법을 채택했다. DTO는 필요한 데이터만 담기 때문에 순환참조를 애초에 예방할 수 있다.</p>
-                    <p>child record found</p>
+                    <p><strong>child record found</strong></p>
                     <p>개요 : 서비스레이어에서 회원탈퇴 테스트중 child record found 에러 발생</p>
                     <p>원인 : 회원 탈퇴시 주문데이터는 통계를 위해 남아있어야 하기 때문에 cascade 설정을 하지 않았다. 주문테이블에 참조된 회원아이디가 남아있기 때문에 child record found가 발생한다.</p>
                     <p>해결 방법 : 회원탈퇴 서비스에서 탈퇴하려는 회원의 아이디를 참조하고 있는 주문들의 회원 아이디들을 null로 수정하는 코드를 추가해 회원을 삭제한다.</p>
